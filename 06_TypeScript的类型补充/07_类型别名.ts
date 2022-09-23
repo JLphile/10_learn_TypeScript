@@ -8,3 +8,4 @@ type PointType = {
 
 function printID(id: IDType) {}
 function printPoint(point: PointType) {}
+export {};
