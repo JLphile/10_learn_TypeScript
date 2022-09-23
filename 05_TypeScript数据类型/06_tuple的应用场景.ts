@@ -1,0 +1,13 @@
+function useState(state: any) {
+  let currentState = state;
+
+  let changeState = (newState: any) => {
+    currentState = newState;
+  };
+  const tuple: [any, (nweState: any) => void] = [currentState, changeState];
+  return tuple;
+}
+
+const [counter, setCounter] = useState(10);
+const [title, setTitle] = useState('abc');
+export {};

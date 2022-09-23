@@ -7,7 +7,7 @@
 //   throw new Error();
 // }
 
-function handleMessage(message: string | number | boolean) {
+function handleMessage(message: string | number) {
   switch (typeof message) {
     case 'string':
       console.log('string处理方式处理message');
@@ -23,4 +23,4 @@ function handleMessage(message: string | number | boolean) {
 handleMessage('abc');
 handleMessage(123);
 // 假设有人修改上面的函数，增加了boolean类型
-handleMessage(true);
+// handleMessage(true);
